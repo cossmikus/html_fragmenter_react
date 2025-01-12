@@ -112,7 +112,7 @@ export default function Home() {
       formData.append("max_len", maxLen.toString());
 
       // POST to your Flask backend
-      const response = await fetch("http://localhost:8002/api/split", {
+      const response = await fetch("https://web-production-ec5a4.up.railway.app//api/split", {
         method: "POST",
         body: formData,
       });
